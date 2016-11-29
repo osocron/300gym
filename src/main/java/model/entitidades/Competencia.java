@@ -25,7 +25,7 @@ public class Competencia extends Entidad {
     private Date fechaFinCompetencia;
     private String nombreSedeCompetencia;
     private String direccionSedeCompetencia;
-    private Double costoInscripcionCompetencia;
+    private Float costoInscripcionCompetencia;
 
     public Competencia(Integer idCompetencia,
                        String nombreCompetencia,
@@ -33,7 +33,7 @@ public class Competencia extends Entidad {
                        Date fechaFinCompetencia,
                        String nombreSedeCompetencia,
                        String direccionSedeCompetencia,
-                       Double costoInscripcionCompetencia) {
+                       Float costoInscripcionCompetencia) {
         this.idCompetencia = idCompetencia;
         this.nombreCompetencia = nombreCompetencia;
         this.fechaInicioCompetencia = fechaInicioCompetencia;
@@ -91,11 +91,11 @@ public class Competencia extends Entidad {
         this.direccionSedeCompetencia = direccionSedeCompetencia;
     }
 
-    public Double getCostoInscripcionCompetencia() {
+    public Float getCostoInscripcionCompetencia() {
         return costoInscripcionCompetencia;
     }
 
-    public void setCostoInscripcionCompetencia(Double costoInscripcionCompetencia) {
+    public void setCostoInscripcionCompetencia(Float costoInscripcionCompetencia) {
         this.costoInscripcionCompetencia = costoInscripcionCompetencia;
     }
 
